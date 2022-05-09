@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-05-2022 a las 03:12:21
+-- Tiempo de generación: 09-05-2022 a las 06:25:57
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.6
 
@@ -43,7 +43,11 @@ CREATE TABLE `articulos` (
 
 INSERT INTO `articulos` (`id`, `codigo`, `descripcion`, `cantidad`, `precio`, `created_at`, `updated_at`) VALUES
 (1, 'COD01', 'PRUEBA UNO', 10, '15.00', '2022-05-06 20:09:55', '2022-05-06 20:47:26'),
-(2, 'COD02', 'PRUEBA  DOS', 11, '14.00', '2022-05-06 20:12:03', '2022-05-06 20:47:57');
+(5, 'codigo05', 'prueba cinco', 19, '31.00', '2022-05-07 06:16:12', '2022-05-07 06:16:40'),
+(6, 'codigo02', 'galletas oreo', 45, '21.00', '2022-05-07 06:39:54', '2022-05-07 06:39:54'),
+(7, 'codig09', 'natilla navideña', 50, '37.00', '2022-05-07 06:40:45', '2022-05-07 06:40:45'),
+(8, 'codigo06', 'buñuelos', 29, '26.00', '2022-05-07 06:41:27', '2022-05-07 06:41:27'),
+(9, 'codigo02', 'sancocho', 32, '46.00', '2022-05-07 21:55:13', '2022-05-07 21:55:13');
 
 -- --------------------------------------------------------
 
@@ -137,7 +141,10 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('5AzLc7MKom5udfgvuA85H98fVORWz1zsgvH55BjV', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUGlnMmVqc1lLU2N1Rloyc1JnSHcwZW9Tb2tQQ3NUc1ZWNGtpR1RlMiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcnRpY3Vsb3MiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1651853310),
-('ktauZrtcGIybnlvRkUE1PFihYxxLVhslifeh4eIu', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNmdRUTR1WGhqUHpRNXU2Tzl2bG9FdEJ5NUhla0Q3ajVZSUNrbHpscSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcnRpY3Vsb3MiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1651882737);
+('CDDktECro0EUbOwrON7NCRVxIDB8rmdJOM32bqgP', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiV2JrR0xLZnF6SVZEZUl4STRvM2I0RVdQU3VJazFvZTJBNzMzM2JzUCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcnRpY3Vsb3MiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1651942513),
+('ktauZrtcGIybnlvRkUE1PFihYxxLVhslifeh4eIu', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNmdRUTR1WGhqUHpRNXU2Tzl2bG9FdEJ5NUhla0Q3ajVZSUNrbHpscSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcnRpY3Vsb3MiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1651890671),
+('pcNABABZyD40FOxOc8YZDaohxBjCoz2gm59IUACN', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiNmFwZ0dYS1Q5bkExVXk0UzF4eUtkMWVYZk1NcmVKcTFmN3E5Sm1WMSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcnRpY3Vsb3MiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO30=', 1651962118),
+('RTMj73Hesj1J0CQNez7U2jpjWyQc1vEP8qbeIx1w', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiUHBHc3I3RVFFck1DT3czMGkwelY3UkJNWjk5emlvRUtmQlYzTHlHSyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6MzoidXJsIjthOjE6e3M6ODoiaW50ZW5kZWQiO3M6MzY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcnRpY3Vsb3MvZWRpdCI7fX0=', 1652070251);
 
 -- --------------------------------------------------------
 
@@ -160,6 +167,14 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
+(1, 'diego ospina', 'ospina@gmail.com', NULL, '$2y$10$E/plKGmORf8bUFZZmaLAg.Q1KKKP5eK5n1ElAOIazeoyY2wQY8AO2', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-08 01:20:52', '2022-05-08 01:20:52'),
+(2, 'info DP', 'infodp@gmail.com', NULL, '$2y$10$BWuWRWsH9BRiP3nT.dddS.F/v0yITE8P8/2MTtl9QMBtvBHNgEs.K', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-08 01:22:18', '2022-05-08 01:22:18');
 
 --
 -- Índices para tablas volcadas
@@ -221,7 +236,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `failed_jobs`
@@ -245,7 +260,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
